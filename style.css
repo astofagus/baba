@@ -1,0 +1,481 @@
+#loader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  overflow: visible;
+  background: #fff url('lord load.gif') no-repeat center center;
+}
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
+* {
+  font-family: Roboto, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+::selection{
+  background-color: #48dbfb60;
+}
+
+::-webkit-scrollbar{
+  width: 10px;
+  background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #353b48;
+}
+.search > div {
+  display: inline-block;
+  position: relative;
+}
+
+.search > div:after {
+  content: "";
+  background: white;
+  width: 4px;
+  height: 20px;
+  left: 85px;
+ position: absolute;
+  top: 80px;
+  transform: rotate(135deg);
+}
+
+.search > div > input {
+  color: white;
+  font-size: 16px;
+  background: transparent;
+  width: 25px;
+  height: 25px;
+  padding: 10px;
+  margin-top: 60px;
+  margin-left: 60px;
+  border: solid 3px white;
+  outline: none;
+  border-radius: 35px;
+  transition: width 0.5s;
+}
+
+.search > div > input::placeholder {
+  color: #efefef;
+  opacity: 0;
+  transition: opacity 150ms ease-out;
+}
+
+.search > div > input:focus::placeholder {
+  opacity: 1;
+}
+
+.search > div > input:focus,
+.search > div > input:not(:placeholder-shown) {
+  width: 250px;
+}
+
+
+
+h1{
+    color: #43ACC5;
+    text-align: center;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    
+
+}
+h2{
+    color: snow;
+    text-align: center;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 10;
+}
+.start > img{
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /*padding-top: 5em;*/ 
+
+}
+
+.intro{
+    background-color:black;
+}
+
+
+  
+.search-container button:hover {
+    background: #ccc;
+  }*/
+  
+.buton{
+ text-align: center;
+ list-style: none;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+a:hover{
+  color: skyblue;
+}
+.baba{
+  color: white;
+  word-spacing: 30px;
+  text-align: center;
+}
+
+
+* {
+    box-sizing: border-box;
+  }
+ 
+
+  #myBtn{
+    position: fixed;
+  z-index: 999;
+  bottom: 40px;
+  right: 40px;
+  width: 40px;
+  height: 40px;
+  background-color: #48dbfb;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #fff;
+  outline: none;
+  display: none;
+  }
+  
+  #myBtn:hover {
+    /*background-image: linear-gradient(125deg, skyblue,blue);*/
+    color: white;
+  }
+  /*start slide*/
+  .slidershow{
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    margin-top: 450px;
+  }
+  .middle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .navigation{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+  }
+  .bar{
+    width: 50px;
+    height: 10px;
+    border: 2px solid #fff;
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  .bar:hover{
+    background: #fff;
+  }
+  
+  input[name="r"]{
+      position: absolute;
+      visibility: hidden;
+  }
+  
+  .slides{
+    width: 500%;
+    height: 100%;
+    display: flex;
+  }
+  
+  .slide{
+    width: 20%;
+    transition: 0.6s;
+  }
+  .slide img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  #r1:checked ~ .s1{
+    margin-left: 0;
+  }
+  #r2:checked ~ .s1{
+    margin-left: -20%;
+  }
+  #r3:checked ~ .s1{
+    margin-left: -40%;
+  }
+  #r4:checked ~ .s1{
+    margin-left: -60%;
+  }
+  #r5:checked ~ .s1{
+    margin-left: -80%;
+  }
+    /*end slide*/
+  
+  /*start card*/
+  .main{
+    margin: 2%;
+   }
+   
+   .card{
+        width: 20%;
+        display: inline-block;
+        box-shadow: 2px 2px 20px black;
+        border-radius: 5px; 
+        margin: 2%;
+       }
+   
+   .image img{
+     width: 100%;
+     border-top-right-radius: 5px;
+     border-top-left-radius: 5px;
+     
+   
+    
+    }
+   
+   .title{
+    
+     text-align: center;
+     padding: 10px;
+     
+    }
+   
+   #h1{
+     font-size: 20px;
+    }
+   
+   .des{
+     padding: 3px;
+     text-align: center;
+    
+     padding-top: 10px;
+           border-bottom-right-radius: 5px;
+     border-bottom-left-radius: 5px;
+   }
+   button{
+     margin-top: 40px;
+     margin-bottom: 10px;
+     background-color: white;
+     border: 1px solid black;
+     border-radius: 5px;
+     padding:10px;
+   }
+   button:hover{
+     background-color: black;
+     color: white;
+     transition: .5s;
+     cursor: pointer;
+   }
+  /*end card*/
+
+
+h5{
+    text-align: center;
+    font-style: bold;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gold;
+    position: center;
+}
+h3{
+    text-align: center;
+    font-size: 50px;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 25px;
+}
+
+h9{
+  text-align: center;
+    line-height: 1.35em;
+    font-size: 40px;
+    /*font-family:'Bahnschrift SemiLight',sans-serif;*/
+    font-family: 'Barlow', sans-serif;
+    font-weight:900;
+    color: white;
+  }
+
+h10{
+  text-align: center;
+  font-family: 'Barlow', sans-serif;
+font-weight: bold;
+color: white;
+    line-height: 1.75em;
+    font-size: 18px;
+    letter-spacing: normal;
+}
+.about{
+  line-height: 1.875em;
+  text-align: center;
+  font-size: 15px;
+ /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;*/
+  font-family: 'Barlow', sans-serif;
+  background-color:black;
+  color: white;
+  letter-spacing: 0.05px;
+}
+.about > button{
+  padding: 15px;
+  background-color: black;
+   color: white;
+   font-family: 'Barlow', sans-serif;
+   font-weight: bold;
+   cursor: pointer;
+   border: none;
+   letter-spacing: 2px;
+   transition-duration: 0.4s ;
+}
+
+.about > button:hover{
+  background-color: white;
+  color: black;
+}
+
+.favour{
+    width: 100%;
+    
+}
+
+.time{
+  background-color: #222121;
+  text-align: center;
+}
+.baaa{
+  color: #43ACC5;
+  text-align: center;
+  font-weight: normal;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+}
+.timing{
+  color: white;
+  text-align: center;
+  font-size: 15px;
+}
+.visit{
+  color: white;
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
+}
+.time > button{
+  background-color: #43ACC5;
+  color: white;
+  border:none;
+  padding: 15px;
+  letter-spacing: 1px;
+} 
+
+  .get_in_touch{
+    width: 100%;
+    background-color: black;
+    align-items: center;
+}
+.h1{
+    color: #099CF9;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+    line-height: 1.35em;
+    font-size: 40px;
+}
+.h2{
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Oxygen', sans-serif;
+}
+input[type = "text"]{
+    background-color: black;
+    width: 60%;
+    padding: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid white;
+    color: white;
+}
+input[type ="email"]{
+    background-color: black;
+    width: 60%;
+    padding: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid white;
+    color: white;
+}
+input[class = "message"]{
+    padding-bottom: 125px;
+
+}
+.get_in_touch > button{
+    padding: 15px;
+width: 150px;
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    letter-spacing: 2px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition-duration: 0.4s;
+}
+
+.get_in_touch > button:hover{
+background-color: white;
+color: black;
+}
+
+  
+
+.fa-youtube {
+    background: black;
+    color: white; 
+    font-size: 50px;
+    padding-left: 13px;
+  }
+
+  .fa-facebook {
+    background: black;
+    color: white;
+    padding-left: 47%;
+  }
+  .fa-twitter {
+    background: black;
+    color: white;
+    padding-left: 13px;
+  }
+  footer{
+    background-color: black;
+    font-size: 17px;
+  }
+  h11{
+    text-align: center;
+    padding-left: 42%;
+    line-height: 1.79em;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h12{
+  text-align: center;
+  padding-left: 47%;
+  line-height: 1.79em;
+  font-size: 14px;
+  color: white;
+  font-family: 'Oxygen', sans-serif;
+}
